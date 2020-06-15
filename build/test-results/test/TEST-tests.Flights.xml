@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.Flights" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-15T14:50:50" hostname="AUSAL1T7GTFJ" time="52.663">
+<testsuite name="tests.Flights" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-15T22:20:46" hostname="AUSAL1T7GTFJ" time="35.462">
   <properties/>
-  <testcase name="flightSearch" classname="tests.Flights" time="52.663"/>
+  <testcase name="flightSearch" classname="tests.Flights" time="35.462"/>
   <system-out><![CDATA[
 **************************************************
 * Initializing Flights...
@@ -13,9 +13,11 @@ Executing preconditions for tests.Flights...
 
 	*** Starting test flightSearch...
 
-The element's text should be empty
+Available flights: 12
+The lowest price with least stops: $198
+
 ]]></system-out>
-  <system-err><![CDATA[Jun 15, 2020 9:50:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Jun 15, 2020 5:20:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

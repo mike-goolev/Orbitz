@@ -50,27 +50,27 @@ public class HomePage extends BasePage {
         click(homePageLocators.secondChildrenAgeValue);
     }
 
-    public void enterFirstDeparture(String departure) {
+    public void enterDepartureA(String departure) {
         setElementText(homePageLocators.departureFirst, departure);
     }
 
-    public void enterFirstDestination(String destination) {
+    public void enterDestinationB(String destination) {
         setElementText(homePageLocators.destinationFirst, destination);
     }
 
-    public void enterSecondtDeparture(String departure) {
+    public void enterDepartureB(String departure) {
         setElementText(homePageLocators.departureSecond, departure);
     }
 
-    public void enterSecondDestination(String destination) {
+    public void enterDestinationC(String destination) {
         setElementText(homePageLocators.destinationSecond, destination);
     }
 
-    public void enterThirdDeparture(String departure) {
+    public void enterDepartureC(String departure) {
         setElementText(homePageLocators.departureThird, departure);
     }
 
-    public void enterThirdDestination(String destination) {
+    public void enterDestinationA(String destination) {
         setElementText(homePageLocators.destinationThird, destination);
     }
 

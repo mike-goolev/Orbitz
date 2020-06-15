@@ -16,7 +16,7 @@ public class BasePage {
 
         /* Setup fluent wait */
         waitInSeconds = 20;
-        wait = new WebDriverWait(driver, waitInSeconds, 300);
+        wait = new WebDriverWait(driver, waitInSeconds, 1000);
         wait.ignoring(ElementClickInterceptedException.class)
                 .ignoring(ElementNotInteractableException.class)
                 .ignoring(ElementNotSelectableException.class)
@@ -48,7 +48,6 @@ public class BasePage {
             click(identifier);
             driver.findElement(identifier).clear();
         } catch (Exception e) {
-            System.out.println("The element's text should be empty");
         }
     }
 
