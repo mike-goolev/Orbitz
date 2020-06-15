@@ -31,20 +31,28 @@ public class Flights extends BaseTest {
 
     @Test
     public void flightSearch() {
+        /* Navigate to orbitz.com */
         homePage.loadHomePageByURL();
 
+        /* Select Flight tab */
         homePage.selectFlightTab();
 
+        /* Select Multicity option */
         homePage.selectMulticityOption();
 
+        /* Use search for 2 adults */
         homePage.selectAdults();
 
+        /* Use search for 2 children */
         homePage.selectChildren();
 
+        /* Specify children age */
         homePage.specifyChildrenAge();
 
+        /* Click on add more flights */
         homePage.addFlights();
 
+        /* Enter three flights such that they close the loop */
         homePage.enterDepartureA("Austin");
         homePage.enterDestinationB("Chicago");
         homePage.enterDepartureB("Chicago");
@@ -52,19 +60,24 @@ public class Flights extends BaseTest {
         homePage.enterDepartureC("Boston");
         homePage.enterDestinationA("Austin");
 
+        /* Specify travel dates */
         homePage.enterFirstDate("09/07/2020");
         homePage.enterSecondDate("09/10/2020");
         homePage.enterThirdDate("09/27/2020");
 
+        /* Submit the search */
         homePage.submitSearch();
 
+        /* Find out how many results available */
         resultsPage.findFlightsAmount();
 
+        /* Decide which option is the lowest price with least stops */
         resultsPage.findPriceWithLeastStops();
 
+        /* Select flight with no extra cost */
         resultsPage.selectFlight();
 
-        // Switch to new window opened
+        /* Switch to new window opened */
         for(String winHandle : driver.getWindowHandles()){
             driver.switchTo().window(winHandle);
         }

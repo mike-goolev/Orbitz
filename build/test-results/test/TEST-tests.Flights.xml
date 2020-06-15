@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.Flights" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-15T22:20:46" hostname="AUSAL1T7GTFJ" time="35.462">
+<testsuite name="tests.Flights" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-15T23:06:40" hostname="AUSAL1T7GTFJ" time="39.912">
   <properties/>
-  <testcase name="flightSearch" classname="tests.Flights" time="35.462"/>
+  <testcase name="flightSearch" classname="tests.Flights" time="39.912"/>
   <system-out><![CDATA[
 **************************************************
 * Initializing Flights...
@@ -17,7 +17,7 @@ Available flights: 12
 The lowest price with least stops: $198
 
 ]]></system-out>
-  <system-err><![CDATA[Jun 15, 2020 5:20:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Jun 15, 2020 6:06:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

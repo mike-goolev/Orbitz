@@ -38,8 +38,8 @@ public class BaseTest extends TestNG {
 
         /* Create a webdriver instance */
         driver = BrowserFactory.getDriver(browser);
-//        driver.manage().window().maximize();
-//         move the mouse cursor outside of the browser window
+        driver.manage().window().maximize();
+//      move the mouse cursor outside of the browser window
         Robot robot = null;
         try {
             robot = new Robot();
@@ -57,23 +57,23 @@ public class BaseTest extends TestNG {
     }
 
 
-//    @AfterClass(alwaysRun = true)
-//    public void baseTestClassTeardown(){
-//        log( "\n**************************************************\n" +
-//                "* Finishing " + this.getClass().getSimpleName() + "...\n" +
-//                "**************************************************", true);
-//
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
-//
-//    @AfterSuite(alwaysRun = true)
-//    public void baseTestSuiteTeardown(){
-//        log( "\nTesting finished.\n", true);
-//
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @AfterClass(alwaysRun = true)
+    public void baseTestClassTeardown(){
+        log( "\n**************************************************\n" +
+                "* Finishing " + this.getClass().getSimpleName() + "...\n" +
+                "**************************************************", true);
+
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+
+    @AfterSuite(alwaysRun = true)
+    public void baseTestSuiteTeardown(){
+        log( "\nTesting finished.\n", true);
+
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
