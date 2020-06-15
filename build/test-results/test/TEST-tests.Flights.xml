@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Flights" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-15T14:50:50" hostname="AUSAL1T7GTFJ" time="52.663">
+  <properties/>
+  <testcase name="flightSearch" classname="tests.Flights" time="52.663"/>
+  <system-out><![CDATA[
+**************************************************
+* Initializing Flights...
+**************************************************
+Browser: firefox
+
+Executing preconditions for tests.Flights...
+
+
+	*** Starting test flightSearch...
+
+The element's text should be empty
+]]></system-out>
+  <system-err><![CDATA[Jun 15, 2020 9:50:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
